@@ -10,13 +10,13 @@
 usage:
 
 ```
-f = open("outputFile.arff","w")
-f.writelines(pandas2arff(df, name = "mypandasdata"))
-f.close()
+pandas2arff(df, filename = 'outputFile.arff',name = "mypandasdata")
 ```
 
 where,
 
 df: your pandas dataframe,
+
+filename: your ARFF format output file
 
 name: the stuff which goes after "@relation"
