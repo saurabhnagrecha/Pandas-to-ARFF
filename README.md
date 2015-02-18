@@ -15,7 +15,8 @@ f.writelines(pandas2arff(df, name = "mypandasdata"))
 f.close()
 ```
 
-where
-    df: your pandas dataframe
+where,
 
-    name: the stuff which goes after "@relation"
+df: your pandas dataframe,
+
+name: the stuff which goes after "@relation"
