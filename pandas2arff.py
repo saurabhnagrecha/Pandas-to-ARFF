@@ -21,7 +21,7 @@ def pandas2arff(df,name = "pandasdata",filename):
                     _instanceString+="\"" + (df.iloc[i,j]) + "\""
                 else:
                     _instanceString+=str(df.iloc[i,j])
-                if j!=df.shape[1]:#if it's not the last feature, add a comma
+                if j!=df.shape[1]-1:#if it's not the last feature, add a comma
                     _instanceString+=","
         _instanceString+="\n"
         arffList.append(_instanceString)
