@@ -1,5 +1,5 @@
 # pandas2arff
-- Create an ARFF string from an existing pandas dataframe
+- Create an ARFF dump file from an existing pandas dataframe
 
 - Imports column names straight from the pandas dataframe
 
