@@ -12,7 +12,7 @@ def pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleanna
     import re
     
     def cleanstring(s):
-        return re.sub('[^A-Za-z0-9]+', "_", s)
+        return re.sub('[^A-Za-z0-9]+', "_", str(s))
     
     dfcopy = df #all cleaning operations get done on this copy
     
