@@ -10,13 +10,19 @@
 usage:
 
 ```
-pandas2arff(df, filename = 'outputFile.arff',name = "mypandasdata")
+pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleannan=True)
 ```
 
 where,
 
-df: your pandas dataframe,
+* df: dataframe in pandas format (flattened, no groupings)
+* filename: the filename you want the weka compatible file to be in
+* wekaname: the name you want to give to the weka dataset (this will be visible to you when you open it in Weka)
+* cleanstringdata: clean up data which may have spaces and replace with "_", special characters etc which seem to annoy Weka. To suppress this, set this to False.
+* cleannan: replaces all nan values with "?" which is Weka's standard for missing values. To suppress this, set this to False.
 
-filename: your ARFF format output file
 
-name: the stuff which goes after "@relation"
+What's not supported (yet):
+- dates as variables
+
+- any other popular use-cases you might suggest!
