@@ -14,11 +14,12 @@ def pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleanna
     def cleanstring(s):
         return re.sub('[^A-Za-z0-9]+', "_", s)
     
+    dfcopy = df #all cleaning operations get done on this copy
+    
+    
     if cleannan!=False:
         dfcopy = dfcopy.fillna(-999999999) #this is so that we can swap this out for "?"
         #this makes sure that certain numerical columns with missing values don't get stuck with "object" type
-    
-    dfcopy = df #all cleaning operations get done on this copy
     
     f = open(filename,"w")
     arffList = []
