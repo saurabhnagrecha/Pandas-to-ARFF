@@ -27,6 +27,7 @@ where,
 Using the sample files,
 
 ```python
+# import pandas as pd
 df = pd.read_csv("foo.txt", na_values="NA")
 pandas2arff(df, "foo.arff")
 ```
