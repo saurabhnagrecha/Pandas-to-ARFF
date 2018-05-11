@@ -11,7 +11,7 @@
 ## Usage
 
 ```python
-pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleannan=True)
+pandas2arff(df, filename, wekaname="pandasdata", cleanstringdata=True, cleannan=True)
 ```
 
 where,
@@ -27,8 +27,8 @@ where,
 Using the sample files,
 
 ```python
-df = pd.read_csv("foo.txt",na_values="NA")
-pandas2arff(df,"foo.arff")
+df = pd.read_csv("foo.txt", na_values="NA")
+pandas2arff(df, "foo.arff")
 ```
 
 Literally just these two lines!
