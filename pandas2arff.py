@@ -1,3 +1,5 @@
+import numpy as np
+
 def pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleannan=True):
     """
     converts the pandas dataframe to a weka compatible file
